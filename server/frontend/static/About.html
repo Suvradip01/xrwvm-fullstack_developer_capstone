@@ -1,8 +1,28 @@
+<!DOCTYPE html>
 <html>
 <head>
-  <!-- Link the style sheet here -->
+  <meta charset="UTF-8">
+  <title>About Us - Best Cars Dealership</title>
+  <link rel="stylesheet" href="/static/style.css">
+  <link rel="stylesheet" href="/static/bootstrap.min.css">
+  <style>
+    .card:hover {
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+      transition: box-shadow 0.3s ease-in-out;
+    }
+    .title {
+      font-weight: bold;
+      font-size: 1.25rem;
+    }
+    .about-header {
+      padding: 30px;
+      text-align: center;
+    }
+  </style>
 </head>
-<div>
+
+<body>
+  <!-- Navbar -->
   <nav class="navbar navbar-expand-lg navbar-light" style="background-color:darkturquoise; height: 1in;">
     <div class="container-fluid">
       <h2 style="padding-right: 5%;">Dealerships</h2>
@@ -24,45 +44,50 @@
       </div>
     </div>
   </nav>
-  
-    <div class="card" style="width: 80%;margin: auto; margin-top:5%;">
-      <div class="banner" name="about-header">
-      <!-- Insert header information here -->
-      </div>
-      <div style="display: flex;flex-direction: row; margin:auto">
+
+  <!-- About Header -->
+  <div class="card" style="width: 80%; margin: auto; margin-top: 5%;">
+    <div class="banner about-header" name="about-header">
+      <h1>About Us</h1>
+      <p>Welcome to Best Cars dealership, home to the finest collection of domestic and imported cars across North America.</p>
+      <p>We offer competitive pricing, financing options, and a stress-free buying experience. Our mission is to help you find your perfect car with confidence.</p>
+    </div>
+
+    <!-- Team Section -->
+    <div style="display: flex; flex-direction: row; justify-content: space-around; padding-bottom: 30px;">
+      <!-- Person 1 -->
       <div class="card" style="width: 30%;">
-        <img class="card-img-top" src="/static/person.png" alt="Card image">
+        <img class="card-img-top" src="/static/person.png" alt="Suvradip">
         <div class="card-body">
-          <p class="title">Person1</p>
-          <p>Person1 Title</p>
-          <p class="card-text">Some text that explains the person1 in about 2 short sentences</p>
-          <p>person1@example.com</p>
+          <p class="title">Suvradip Ghosh</p>
+          <p>Lead Full Stack Developer</p>
+          <p class="card-text">Suvradip designs and maintains the backend APIs and frontend UI components of the application.</p>
+          <p>ghoshsuvradip215@gmail.com</p>
         </div>
       </div>
 
+      <!-- Person 2 -->
       <div class="card" style="width: 30%;">
-        <img class="card-img-top" src="/static/person.png" alt="Card image">
+        <img class="card-img-top" src="/static/person.png" alt="Riya Sen">
         <div class="card-body">
-          <p class="title">Person2</p>
-          <p>Person2 Title</p>
-          <p class="card-text">Some text that explains the person2 in about 2 short sentences</p>
-          <p>person2@example.com</p>
+          <p class="title">Riya Sen</p>
+          <p>UI/UX Designer</p>
+          <p class="card-text">Riya ensures the dealership site provides a modern, intuitive, and accessible experience.</p>
+          <p>riya.sen@example.com</p>
         </div>
       </div>
 
+      <!-- Person 3 -->
       <div class="card" style="width: 30%;">
-        <img class="card-img-top" src="/static/person.png" alt="Card image">
+        <img class="card-img-top" src="/static/person.png" alt="Rahul Mehra">
         <div class="card-body">
-          <p class="title">Person3</p>
-          <p>Person3 Title</p>
-          <p class="card-text">Some text that explains the person3 in about 2 short sentences</p>
-          <p>person3@example.com</p>
+          <p class="title">Rahul Mehra</p>
+          <p>DevOps Engineer</p>
+          <p class="card-text">Rahul manages deployments and CI/CD pipelines, ensuring performance and uptime.</p>
+          <p>rahul.mehra@example.com</p>
         </div>
       </div>
     </div>
-    </div>
-    </div>
-    
-</div>
-
+  </div>
+</body>
 </html>
