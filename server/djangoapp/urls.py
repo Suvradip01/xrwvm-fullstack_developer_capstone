@@ -15,4 +15,6 @@ urlpatterns = [
     # path for registration
     path('register', views.register_user, name='register'),
 
+    # ✅ path for dealers
+    path('dealers/', views.dealers_view, name='dealers'),
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
